@@ -57,15 +57,7 @@
         });
     }
 
-    // Cập nhật lại dữ liệu đã lưu trong storage để loại bỏ các mục trong blacklist
-    function cleanStorage() {
-        visitedTitles = filterBlacklist(visitedTitles);
-        visitedAlts = filterBlacklist(visitedAlts);
-
-        // Cập nhật lại giá trị đã lọc vào storage
-        GM_setValue(visitedTitlesKey, visitedTitles);
-        GM_setValue(visitedAltsKey, visitedAlts);
-    }
+    
 
     // Temporary storage for changes
     let tempVisitedLinks = [];
